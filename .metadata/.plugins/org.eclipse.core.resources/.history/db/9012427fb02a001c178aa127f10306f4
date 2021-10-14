@@ -1,0 +1,12 @@
+package demo.regex;
+
+import java.util.stream.Stream;
+
+public class RegexDemo {
+
+	public static void main(String[] args) {
+		String strings = "Subrata";
+
+	}
+
+}

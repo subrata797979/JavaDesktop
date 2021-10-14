@@ -1,0 +1,32 @@
+package demo.stream;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+import java.util.stream.Collectors;
+
+public class FindOddStream {
+	public static void main(String[] args) {
+		System.out.println("Enter the size of the array : ");
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		List<Integer> list = new ArrayList<>(n);	
+		for(int i=0; i<n; i++) {
+			list.add(i);
+		}
+		list.stream().forEach(System.out::println); //why we prefer stream over normal list?
+//		list.forEach(System.out::println);
+		System.out.println("List of odd numbers : ");
+		list = list.stream().filter(i->i%2!=0).collect(Collectors.toList());
+		list.forEach(System.out::print);
+	
+		//Can I input directly as a stream? Is that even useful by any means?
+		
+		
+		//collecting as an array
+		list = list.stream().filter(i->i%2==0).toList();
+		list.forEach(System.out::print);
+
+		sc.close();
+	}
+}

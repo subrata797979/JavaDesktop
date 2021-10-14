@@ -1,0 +1,20 @@
+package demo.regex;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class RegexDemo {
+
+	public static void main(String[] args) {
+		String names = "Subrata Sumit Sunita Su Ayan Rohit";
+		//Search for name starting with s
+		String pattern = "(?i)(\s|^)s[a-z]{4,}(\s|$)";
+		Pattern checkRegex = Pattern.compile(pattern);
+		Matcher regexMatcher = checkRegex.matcher(names);
+		while(regexMatcher.find()) {
+			System.out.println(regexMatcher.start() + " : " + regexMatcher.group());
+		}
+
+	}
+
+}
