@@ -13,3 +13,26 @@
 2021-10-14 11:03:08,756 [sshd-JGitSshClient[2ff7249a]-nio2-thread-5] WARN  o.e.j.i.t.s.JGitPublicKeyAuthentication - processAuthDataRequest(JGitClientSession[git@github.com/13.234.176.102:22])[ssh-connection][publickey] sent algorithm rsa-sha2-512 but got back ssh-rsa from SSH-2.0-babeld-dee46824
 2021-10-14 11:03:14,856 [sshd-JGitSshClient[15fe0048]-nio2-thread-5] WARN  o.e.j.i.t.s.JGitPublicKeyAuthentication - processAuthDataRequest(JGitClientSession[git@github.com/13.234.176.102:22])[ssh-connection][publickey] sent algorithm rsa-sha2-512 but got back ssh-rsa from SSH-2.0-babeld-dee46824
 2021-10-14 11:03:23,471 [sshd-JGitSshClient[1a75265f]-nio2-thread-5] WARN  o.e.j.i.t.s.JGitPublicKeyAuthentication - processAuthDataRequest(JGitClientSession[git@github.com/13.234.176.102:22])[ssh-connection][publickey] sent algorithm rsa-sha2-512 but got back ssh-rsa from SSH-2.0-babeld-dee46824
+2021-10-14 11:04:23,311 [sshd-JGitSshClient[334b32bf]-nio2-thread-5] WARN  o.e.j.i.t.s.JGitPublicKeyAuthentication - processAuthDataRequest(JGitClientSession[git@github.com/13.234.210.38:22])[ssh-connection][publickey] sent algorithm rsa-sha2-512 but got back ssh-rsa from SSH-2.0-babeld-dee46824
+2021-10-14 11:04:40,597 [sshd-JGitSshClient[5489e57b]-nio2-thread-3] WARN  o.e.j.i.t.s.JGitPublicKeyAuthentication - processAuthDataRequest(JGitClientSession[git@github.com/13.234.210.38:22])[ssh-connection][publickey] sent algorithm rsa-sha2-512 but got back ssh-rsa from SSH-2.0-babeld-dee46824
+2021-10-14 18:23:53,596 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2021-10-14 23:48:27,430 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2021-10-16 22:55:05,670 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2021-10-16 22:55:09,265 [Worker-2: Loading available Gradle versions] ERROR o.e.b.c.i.u.g.PublishedGradleVersions - Cannot write Gradle version information cache file.
+java.io.IOException: Access is denied
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:347)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:242)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:312)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:290)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:131)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:141)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:223)
+	at java.base/java.io.Writer.write(Writer.java:249)
+	at com.google.common.io.CharSource$StringCharSource.copyTo(CharSource.java:649)
+	at org.eclipse.buildship.core.internal.util.gradle.PublishedGradleVersions.storeCacheVersionsFile(PublishedGradleVersions.java:184)
+	at org.eclipse.buildship.core.internal.util.gradle.PublishedGradleVersions.tryToDownloadAndCacheVersions(PublishedGradleVersions.java:150)
+	at org.eclipse.buildship.core.internal.util.gradle.PublishedGradleVersions.tryToUpdateOutdatedVersionsFile(PublishedGradleVersions.java:133)
+	at org.eclipse.buildship.core.internal.util.gradle.PublishedGradleVersions.create(PublishedGradleVersions.java:117)
+	at org.eclipse.buildship.core.internal.util.gradle.PublishedGradleVersionsWrapper$LoadVersionsJob.run(PublishedGradleVersionsWrapper.java:60)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
