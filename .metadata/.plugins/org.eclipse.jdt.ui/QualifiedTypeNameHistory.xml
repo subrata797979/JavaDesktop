@@ -21,4 +21,8 @@
     <fullyQualifiedTypeName name="javax.swing.ImageIcon"/>
     <fullyQualifiedTypeName name="java.awt.Color"/>
     <fullyQualifiedTypeName name="javax.swing.plaf.basic.BasicButtonListener"/>
+    <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="birthdayGui.DbConnector"/>
+    <fullyQualifiedTypeName name="net.proteanit.sql.DbUtils"/>
 </qualifiedTypeNameHistroy>

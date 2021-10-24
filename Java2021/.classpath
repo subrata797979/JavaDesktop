@@ -7,5 +7,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="D:/Softwares/Coding/ojdbc7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Subu/Desktop/rs2xml/rs2xml/rs2xml.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
