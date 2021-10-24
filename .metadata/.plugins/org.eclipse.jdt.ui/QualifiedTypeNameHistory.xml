@@ -17,4 +17,8 @@
     <fullyQualifiedTypeName name="java.util.stream.IntStream"/>
     <fullyQualifiedTypeName name="java.util.stream.Stream.Builder"/>
     <fullyQualifiedTypeName name="java.util.stream.Stream"/>
+    <fullyQualifiedTypeName name="javax.swing.JFrame"/>
+    <fullyQualifiedTypeName name="javax.swing.ImageIcon"/>
+    <fullyQualifiedTypeName name="java.awt.Color"/>
+    <fullyQualifiedTypeName name="javax.swing.plaf.basic.BasicButtonListener"/>
 </qualifiedTypeNameHistroy>

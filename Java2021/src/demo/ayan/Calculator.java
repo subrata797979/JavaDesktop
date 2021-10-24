@@ -1,6 +1,17 @@
 package demo.ayan;
 import java.util.Scanner;
 
+/*
+ * WELCOME TO AYAN'S CALCULATOR:
+ :OPERATION VALUES: 
+ (to add=1), 
+ (to sub=2), 
+ (to mul=3), 
+ (to div=4), 
+ (to mod=5),
+put your 1st value
+ */
+
 public class Calculator 
 {
 	public static void main(String[] args) 
